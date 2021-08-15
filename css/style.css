@@ -320,11 +320,13 @@ width: 100%;
 
 .magazine .slide_box .right li a div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: flex-end; */
   height: 82px;
   font-size: 16px;
   color: #333;
   position: relative;
+  text-align: right;
 }
 
 .magazine .slide_box .right li a img {
@@ -335,8 +337,13 @@ width: 100%;
 
 .magazine .slide_box .right li a strong {
   display: block;
+  height: 20px;
   font-size: 13px;
   color: #000;
+}
+
+.magazine .slide_box .right li a div p {
+  text-align: right;
 }
 
 .magazine.slide {
@@ -350,7 +357,7 @@ width: 100%;
 .magazine.slide .prev {
   position: absolute;
   top: 50%;
-  margin-left: 100px;
+  margin-left: -70px;
 }
 
 .magazine.slide .next {
